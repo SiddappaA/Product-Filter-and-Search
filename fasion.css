@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:"Poppins", sans-serif;
+    border: none;
+    outline: none;
+}
+body{
+   background-color: #f5f8ff;
+}
+.wrapper{
+    width: 95%;
+    margin: 0 auto;
+}
+.search-content{
+    margin: 20px 0;
+}
+.search-content input{
+    background-color: transparent;
+    width: 40%;
+    border-bottom: 2px solid rgba(8, 8, 8, 0.743);
+    padding: 16px 6px;
+}
+.search-content input:focus{
+    border-bottom-color: #6759ff;
+}
+.search-content button{
+    padding: 16px 32px;
+    margin-left: 16px;
+    background-color: #6759ff;
+    color: #fff;
+    border-radius: 10px;
+    margin-top: 9px;
+}
+#button-nav .button-value{
+    border:2px solid #6759ff;
+    color: #6759ff;
+    background-color: transparent;
+    padding: 10px 38px;
+    border-radius: 48px;
+    cursor: pointer;
+}
+.active{
+    background-color:#6759ff ;
+    color: #fff;
+}
+#products{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 25px;
+    padding: 30px 0;
+}
+.card{
+    background-color: #ffffff;
+    max-width: 290px;
+    margin-top: 16px;
+    padding: 16px;
+    border-radius: 5px;
+    box-shadow: 16px 32px 40px rgba(1,2,68,0.08);
+}
+img{
+    max-width:100%;
+    object-fit: contain;
+    height: 300px;
+}
+.img-container{
+    text-align: center;
+}
+
+.container{
+     padding-top:16px;
+     color: #110f29;
+}
+.hide{
+    display: none;
+}
+.container h5{
+    font-weight: 500;
+}
+
+@media screen and (max-width: 720px){
+    img{
+        max-width: 100%;
+        object-fit: contain;
+        height: 160px;
+    }
+    .card{
+        max-width: 160px;
+        margin-top: 16px;
+    }
+    #products{
+        grid-template-columns: auto auto;
+        grid-column-gap:16px;
+    }
+}
